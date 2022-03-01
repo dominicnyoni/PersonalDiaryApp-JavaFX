@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane fx:id="mainContainer" maxHeight="618" maxWidth="1300" minHeight="618" minWidth="1300" prefHeight="618.0" prefWidth="1300.0" stylesheets="@../../../../resources/default-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.readingPage.ReadingController">
+  
+    <AnchorPane fx:id="bgPane" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="1300.0">
+         <children>
+            <MenuButton layoutX="1200.0" layoutY="5.0" mnemonicParsing="false" text="Options">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleEdit" text="Edit" />
+                <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveAsPDF" text="Save As PDF" />
+              </items>
+            </MenuButton>
+            <VBox layoutY="37.0" prefHeight="579.0" prefWidth="1300.0">
+               <children>
+                  <JFXTextField fx:id="dateField" editable="false" prefHeight="45.0" prefWidth="1300.0" />
+                  <JFXTextField fx:id="subjectField" editable="false" prefHeight="105.0" prefWidth="1300.0" />
+                  <JFXTextArea fx:id="contentField" editable="false" prefHeight="424.0" prefWidth="1300.0" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  
+</StackPane>

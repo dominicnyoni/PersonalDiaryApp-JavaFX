@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0"  stylesheets="@../../../../resources/default-theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controllers.search.searchController">
+   <children>
+       <TableView fx:id="entriesTable" prefHeight="380.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="dateColumn" editable="false" prefWidth="162.0" sortType="DESCENDING" text="Date" />
+                <TableColumn fx:id="subjectColumn" editable="false" prefWidth="201.0" sortable="false" text="Subject" />
+                  <TableColumn fx:id="contentColumn" editable="false" minWidth="0.0" prefWidth="237.0" sortable="false" text="Content" />
+              </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#readEntry" text="Read" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+                        <MenuItem mnemonicParsing="false" onAction="#exportToPDF" text="exportToPDF" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+       </children>
+</AnchorPane>
