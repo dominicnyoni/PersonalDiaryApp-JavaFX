@@ -2,7 +2,7 @@
 This is simple personary diary application using JavaFX
 
 ### Default Login Credentials
-Password is  "password"
+Default Password: password
 
 
 ### Libraries Used
