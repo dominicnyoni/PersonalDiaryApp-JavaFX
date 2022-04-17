@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0"  stylesheets="@../../../../resources/default-theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controllers.search.searchController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0"  stylesheets="@../../../../resources/default-theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controllers.search.SearchController">
    <children>
        <TableView fx:id="entriesTable" prefHeight="380.0" prefWidth="600.0">
               <columns>
@@ -22,7 +22,7 @@
                       <MenuItem mnemonicParsing="false" onAction="#readEntry" text="Read" />
                         <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
                         <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
-                        <MenuItem mnemonicParsing="false" onAction="#exportToPDF" text="exportToPDF" />
+                        
                     </items>
                   </ContextMenu>
                </contextMenu>
