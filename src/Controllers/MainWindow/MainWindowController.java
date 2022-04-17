@@ -208,7 +208,7 @@ qText.getStyleClass().add("quote");
 }
 
 @FXML
-    protected void handleDelete(ActionEvent event) {
+    private void handleDelete(ActionEvent event) {
         //Fetch the selected row
         Page selectedForDeletion = entriesTable.getSelectionModel().getSelectedItem();
         if (selectedForDeletion == null) {
@@ -235,12 +235,12 @@ qText.getStyleClass().add("quote");
     }
 
 @FXML
-    public void handleRefresh(ActionEvent event) {
+    private void handleRefresh(ActionEvent event) {
         loadData();
     }
 
 @FXML
-    protected void readEntry(ActionEvent event) {
+    private void readEntry(ActionEvent event) {
         
         Page selectedForEdit = entriesTable.getSelectionModel().getSelectedItem();//For fetching the selected row
         if (selectedForEdit == null) {
@@ -272,19 +272,19 @@ qText.getStyleClass().add("quote");
 
 
 @FXML
-protected void saveAllPagesAsPDF(ActionEvent event) {
+private void saveAllPagesAsPDF(ActionEvent event) {
         
     DiaryUtil.exportToPDF(rootPane,entriesTable ,getStage(),list);
         
     }
 
     @FXML
-    protected void closeStage(ActionEvent event) {
+    private void closeStage(ActionEvent event) {
         getStage().close();
     }
     
     @FXML
-    public void handleAbout(ActionEvent e){
+    private void handleAbout(ActionEvent e){
     LoginController con=new LoginController();
     con.handleAbout(e);
     }
