@@ -1,9 +1,5 @@
-/*The search controller handles the matching
-of the keyword from the user with the diary entries in the database
-and return the pages containing matches in a table view.
-The pattern matching algorithm used is the boyermoore algorithm.
- * 
- */
+
+ 
 package Controllers.search;
 
 
