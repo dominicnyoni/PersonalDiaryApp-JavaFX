@@ -1,9 +1,7 @@
-/*
-This is the controller for the login window.
-The controller mainly handles the login button which tests if password entered by user matches the one saved in the 
-preferences,and loads main window if match is true;
 
- */
+
+
+
 package Controllers.login;
 
 import com.jfoenix.controls.JFXPasswordField;
