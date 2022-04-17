@@ -1,5 +1,5 @@
 ###Personal Diary
-This is a simple personary diary desktop application using JavaFX
+This is a simple personal diary desktop application using JavaFX
 
 ### Default Login Credentials
 Default Password: password
